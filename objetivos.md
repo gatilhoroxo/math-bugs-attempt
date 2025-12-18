@@ -1,0 +1,9 @@
+Cadeiras como Cálculo 1,2,3 e 4, Estatística, Matemática Discreta, Lógica para Computação, e as outras que são mais relacionadas com assuntos de Tecnologia, Programação e Computação no geral, além de Física 1 também. 
+Nesse projeto, eu quero poder entender mais sobre matemática, principalmente direcionado para minha área.
+
+1. Quero revisar os conceitos que não fixei bem. Aprender a aplicar matemática em projetos práticos de progração/computação. Entender as conexões entre a matemática e os concetiso de computação. Se preparar para disciplinas futuras. 
+2. Das matérias que cursei sinto que não aprendi nada em Estatística, que poderia ter estudado mais sobre Matemática Discreta e Lógica (achei muito interessante) e as de Cálculo quero que seja mais natural para mim enxergar como usar esses conceitos e entender melhor seus funcionamentos dentro da matemática. Outra matéria que esqueci foi Algebra Linear e Geometria Analítica, que quero fixar melhor os conceitos (acho que ainda estão bem nebulosos). 
+3. Me interesso bastante por algoritmos e estruturas de dados (já cursei uma matéria de programação competitiva), Machine Learning, Computação Gráfica, Criptografia, Análise de algoritmos e sistemas embarcados, robótica, navegação marítima. 
+4. Costumo aprender bem, com exercícios práticos, sendo instigado a pensar sobre um problema que eu tenha o mínimo de noção do assunto (um pouco da teoria, com boas analogias e contexto) para que eu mesmo possa resolver, implementando em código pode ser algo que eu consiga ver melhor a matemática, mas as vezes eu posso me perder dentro da programação e esquecer da matemática, e principalmente gosto muito de trabalhar em um projeto com um contexto sólido e bem claro quais conceitos preciso entender para poder começar ele. 
+
+este é um repositório para guardar esses estudos e fazer alguns .md para me guiar caso eu precise revisar algo

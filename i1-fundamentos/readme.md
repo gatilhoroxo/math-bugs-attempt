@@ -1,372 +1,443 @@
-# Math for CS - Matemática para Ciência da Computação
+# i1-fundamentos - Fundamentos Matemáticos
 
-> **"A matemática é a linguagem com a qual Deus escreveu o universo."**  
-> — Galileu Galilei
+> **"A matemática é a linguagem com a qual Deus escreveu o universo."** — Galileu Galilei
 
-Este repositório documenta minha jornada de revisão e aprofundamento em matemática focada em Ciência da Computação, com ênfase em **aplicações práticas** e **projetos hands-on**.
-
----
-
-## 🎯 Objetivo
-
-Revisar e solidificar conceitos matemáticos que são essenciais para:
-- 🤖 Machine Learning
-- 🎮 Computação Gráfica
-- 🔐 Criptografia
-- 🤖 Robótica e Navegação
-- 🧮 Análise de Algoritmos
-- 📊 Data Science
-
-**Filosofia:** Aprender fazendo. Cada tópico matemático tem um **projeto prático** que força a aplicação dos conceitos.
+Este módulo contém os **6 pilares matemáticos** essenciais para ciência da computação. Cada matéria combina estudo teórico rigoroso com implementações práticas e projetos aplicados.
 
 ---
 
-## 📚 Estrutura do Repositório
+## 📌 Índice
+
+- [Visão Geral](#visão-geral)
+- [Estrutura de Cada Matéria](#estrutura-de-cada-matéria)
+- [Metodologia de Estudo](#metodologia-de-estudo)
+- [Roadmap e Progresso](#roadmap-e-progresso)
+- [Como Estudar](#como-estudar)
+- [Recursos Gerais](#recursos-gerais)
+
+---
+
+## 🎯 Visão Geral
+
+### As 6 Matérias Fundamentais
+
+| # | Matéria | Por que estudar? | Aplicações em CS |
+|---|---------|------------------|------------------|
+| **j1** | [Álgebra Linear](j1-algebra-linear/) | Base nebulosa que aparece em quase tudo | ML, Gráficos 3D, Robótica, Compressão |
+| **j2** | [Geometria Analítica](j2-geometria-analitica/) | Representações geométricas e espaciais | Navegação, Colisões, Renderização |
+| **j3** | [Cálculo](j3-calculo/) | Ferramentas de otimização e mudança | ML (gradientes), Física, Controle |
+| **j4** | [Estatística](j4-estatistica/) | Análise de dados e incerteza | ML, Data Science, Testes A/B |
+| **j5** | [Matemática Discreta](j5-matematica-discreta/) | Estruturas discretas e lógica | Algoritmos, Grafos, Criptografia |
+| **j6** | [Física](j6-fisica/) | Modelagem de sistemas dinâmicos | Simulações, Jogos, Robótica |
+
+### Conexões Entre as Matérias
 
 ```
-math-for-cs/
-├── 01-algebra-linear/
-│   ├── 01-contexto-conceitos.md
-│   ├── 02-implementacao.md
-│   ├── 03-exercicios.md
-│   ├── 04-recursos-conexoes.md
-│   └── projeto-transformacoes-2d/
-│       └── (código do projeto)
-│
-├── 02-geometria-analitica/
-│   ├── 01-contexto-conceitos.md
-│   ├── 02-implementacao.md
-│   ├── 03-exercicios.md
-│   ├── 04-recursos-conexoes.md
-│   └── projeto-ray-tracer/
-│
-├── 03-calculo/
-│   ├── 01-contexto-conceitos.md
-│   ├── ...
-│   └── projeto-gradient-descent/
-│
-├── 04-estatistica/
-│   ├── ...
-│   └── projeto-classificador-bayesiano/
-│
-├── 05-matematica-discreta/
-│   ├── ...
-│   └── projeto-algoritmos-grafo/
-│
-└── README.md (você está aqui!)
+Álgebra Linear ←→ Geometria Analítica
+      ↓                    ↓
+   Cálculo ←→ Estatística & Probabilidade
+      ↓                    ↓
+Matemática Discreta ←→ Física
+      ↓                    ↓
+         Aplicações em CS
 ```
 
 ---
 
-## 🗺️ Roadmap de Estudos
+## 📁 Estrutura de Cada Matéria
 
-### Status Atual: 🟢 Álgebra Linear
+Todas as matérias seguem a **mesma estrutura padronizada**:
 
-| Módulo | Status | Tempo Estimado | Projeto |
-|--------|--------|----------------|---------|
-| **Álgebra Linear** | 🟢 Em Progresso | 6-8 semanas | Engine de Transformações 2D |
-| **Geometria Analítica** | ⚪ Planejado | 3-4 semanas | Ray Tracer Simples |
-| **Cálculo** | ⚪ Planejado | 4-5 semanas | Gradient Descent Visualizado |
-| **Estatística** | ⚪ Planejado | 4-5 semanas | Classificador Bayesiano |
-| **Matemática Discreta** | ⚪ Planejado | 3-4 semanas | PageRank / Grafos |
+```
+jX-nome-da-materia/
+│
+├── readme.md                        # Índice e visão geral da matéria
+│
+├── teoria/                          # Conteúdo teórico
+│   ├── 01-topico-1.md               # Contexto, intuição, definições
+│   ├── 02-topico-2.md
+│   └── ...
+│
+├── exercicios-matematica/           # Matemática pura
+│   ├── 01-topico-exercicios.md      # 4 níveis de dificuldade
+│   ├── 01-topico-solucoes.md        # Soluções passo a passo
+│   ├── 02-topico-exercicios.md
+│   └── ...
+│
+├── implementacao/                   # Código e implementações
+│   ├── 01-topico.md                 # Como implementar
+│   ├── 02-topico.md
+│   └── codigo/                      # Código-fonte
+│       ├── src/
+│       └── tests/
+│
+├── exercicios-codigo/               # Problemas de programação
+│   ├── 01-problemas-basicos.md
+│   ├── 02-problemas-intermediarios.md
+│   ├── 03-desafios.md
+│   └── solucoes/
+│
+├── projeto-ancora/                  # Projeto integrador
+│   ├── README.md
+│   ├── especificacao.md
+│   ├── src/
+│   ├── tests/
+│   └── exemplos/
+│
+└── recursos.md                      # Links, vídeos, livros específicos
+```
+
+---
+
+## 📚 Metodologia de Estudo
+
+### Estrutura Detalhada de Cada Tipo de Arquivo
+
+#### 📖 teoria/XX-topico.md
+Cada arquivo de teoria contém:
+
+1. **Contexto e Motivação**
+   - Por que este tópico importa?
+   - Onde é usado em computação? (exemplos reais)
+   
+2. **Intuição Visual**
+   - Diagramas e visualizações
+   - Analogias do cotidiano
+   - Explicações geométricas
+
+3. **Definições Formais**
+   - Teoria mínima necessária
+   - Notação matemática padrão
+   - Teoremas principais (sem provas longas)
+
+4. **Exemplos Resolvidos**
+   - 2-3 exemplos detalhados passo a passo
+   - Diferentes níveis de complexidade
+
+5. **Conexões**
+   - Como se relaciona com outros tópicos
+   - Aplicações práticas em CS
+
+#### ✏️ exercicios-matematica/
+
+**Arquivos de exercícios** (XX-topico-exercicios.md):
+- **Nível 1 - Básico**: Aplicação direta de definições (10-15 exercícios)
+- **Nível 2 - Intermediário**: Combinação de conceitos (8-10 exercícios)
+- **Nível 3 - Avançado**: Problemas desafiadores, provas (5-7 exercícios)
+- **Nível 4 - Olimpíada/Competição**: Problemas muito difíceis (3-5 exercícios)
+
+**Arquivos de soluções** (XX-topico-solucoes.md):
+- Resposta completa passo a passo
+- Explicação do raciocínio
+- Métodos alternativos quando aplicável
+- Dicas sobre erros comuns
+- Insights e padrões importantes
+
+#### 💻 implementacao/XX-topico.md
+
+Cada arquivo de implementação contém:
+
+1. **Representação em Código**
+   - Como modelar o conceito (structs, classes, tipos)
+   - Design de API
+
+2. **Implementação Comentada**
+   - Código do zero, SEM usar bibliotecas externas
+   - Explicação linha por linha das partes críticas
+
+3. **Análise de Complexidade**
+   - Big O de tempo e espaço
+   - Trade-offs de cada operação
+
+4. **Casos de Teste**
+   - Exemplos práticos para validar
+   - Edge cases importantes
+
+5. **Comparação com Bibliotecas**
+   - Como bibliotecas profissionais fazem (NumPy, Eigen, etc.)
+   - Otimizações avançadas
+   - Quando usar biblioteca vs implementação própria
+
+6. **Armadilhas Comuns**
+   - Bugs frequentes
+   - Erros de precisão numérica
+   - Como evitá-los
+
+#### 🎯 exercicios-codigo/
+
+**Problemas progressivos de programação:**
+
+- **01-problemas-basicos.md**: 5-10 problemas
+  - Implementar operações simples
+  - Testar compreensão básica
+  
+- **02-problemas-intermediarios.md**: 5-8 problemas
+  - Algoritmos que usam os conceitos
+  - Combinação de múltiplas operações
+  
+- **03-desafios.md**: 3-5 problemas
+  - Otimizações avançadas
+  - Casos complexos do mundo real
+  
+- **Links Externos**: LeetCode, Codeforces, Project Euler relacionados
+
+#### 🚀 projeto-ancora/
+
+O projeto âncora integra TODOS os conceitos da matéria:
+
+- **README.md**: Visão geral, objetivos de aprendizado
+- **especificacao.md**: 
+  - O que implementar (requisitos funcionais)
+  - Etapas do projeto (do básico ao avançado)
+  - Critérios de sucesso
+- **src/**: Código-fonte completo e documentado
+- **tests/**: Testes automatizados para cada funcionalidade
+- **exemplos/**: Visualizações, outputs, screenshots, demos
+
+---
+
+## 🔄 Fluxo de Estudo Recomendado
+
+Para cada tópico dentro de uma matéria:
+
+```
+┌─────────────────────────────────────────┐
+│ 1. Ler teoria/XX-topico.md              │
+│    ↓                                     │
+│ 2. Assistir vídeos em recursos.md       │
+│    ↓                                     │
+│ 3. Resolver exercicios-matematica/      │ ← MATEMÁTICA PURA
+│    (começar do Nível 1)                  │
+│    ↓                                     │
+│ 4. Comparar com soluções                 │
+│    ↓                                     │
+│ 5. Ler implementacao/XX-topico.md       │
+│    ↓                                     │
+│ 6. Implementar você mesmo                │ ← CÓDIGO
+│    ↓                                     │
+│ 7. Resolver exercicios-codigo/          │
+│    ↓                                     │
+│ 8. Trabalhar no projeto-ancora/         │ ← INTEGRAÇÃO
+└─────────────────────────────────────────┘
+```
+
+### ⏱️ Tempo Estimado por Matéria
+
+Com dedicação de **2-3 horas por semana**:
+
+| Matéria | Duração | Total de Horas |
+|---------|---------|----------------|
+| Álgebra Linear | 6-8 semanas | 12-24h |
+| Geometria Analítica | 3-4 semanas | 6-12h |
+| Cálculo | 6-8 semanas | 12-24h |
+| Estatística | 4-6 semanas | 8-18h |
+| Matemática Discreta | 5-7 semanas | 10-21h |
+| Física | 3-5 semanas | 6-15h |
+| **TOTAL** | **~30-40 semanas** | **~60-120h** |
+
+---
+
+## 🗺️ Roadmap e Progresso
+
+### Status Atual: 🟢 Álgebra Linear - Planejamento
+
+| Matéria | Status | Próximo Marco | Projeto |
+|---------|--------|---------------|---------|
+| **j1-algebra-linear** | 🟡 Estruturando | Completar teoria de vetores | Engine 2D/3D |
+| **j2-geometria-analitica** | ⚪ Planejado | - | Sistema Navegação |
+| **j3-calculo** | ⚪ Planejado | - | Gradient Descent |
+| **j4-estatistica** | ⚪ Planejado | - | Naive Bayes |
+| **j5-matematica-discreta** | ⚪ Planejado | - | Grafos + SAT |
+| **j6-fisica** | ⚪ Planejado | - | Motor Física 2D |
 
 **Legenda:**
-- 🟢 Em Progresso
+- 🟢 Em andamento ativo
+- 🟡 Estruturando/Preparando
 - ⚪ Planejado
 - ✅ Completo
 
----
+### Progresso Detalhado: Álgebra Linear
 
-## 📖 Como Usar Este Repositório
+- [ ] **Teoria**
+  - [ ] 01-vetores-espacos.md
+  - [ ] 02-transformacoes-lineares.md
+  - [ ] 03-autovalores-autovetores.md
+  - [ ] 04-decomposicoes.md
 
-### Para Cada Módulo:
+- [ ] **Exercícios Matemática**
+  - [ ] Vetores (exercícios + soluções)
+  - [ ] Matrizes (exercícios + soluções)
+  - [ ] Transformações (exercícios + soluções)
+  - [ ] Autovalores (exercícios + soluções)
 
-1. **Leia 01-contexto-conceitos.md**
-   - Entenda POR QUE o tópico importa
-   - Veja ONDE é usado em CS
-   - Obtenha intuição geométrica/visual
+- [ ] **Implementação**
+  - [ ] Vetores e operações
+  - [ ] Matrizes e multiplicação
+  - [ ] Transformações lineares
+  - [ ] Decomposições
 
-2. **Estude 02-implementacao.md**
-   - Veja COMO implementar em código
-   - Exemplos práticos em C/C++
-   - Otimizações e bibliotecas
-
-3. **Pratique com 03-exercicios.md**
-   - Exercícios progressivos (fácil → difícil)
-   - Problemas contextualizados em CS
-   - Links para mais prática
-
-4. **Consulte 04-recursos-conexoes.md**
-   - Livros, vídeos, papers recomendados
-   - Como se conecta com outros tópicos
-   - Próximos passos
-
-5. **Construa o projeto/**
-   - Projeto prático que integra os conceitos
-   - Instruções passo a passo
-   - Extensões opcionais
-
-### Tempo de Dedicação
-
-Com ~2 horas por semana:
-- **Leitura/estudo:** 1 hora
-- **Implementação/projeto:** 1 hora
-
-**Total por módulo:** 6-8 semanas
-
-**Dica:** É melhor estudar consistentemente (2h/semana) do que em rajadas irregulares!
+- [ ] **Projeto: Engine 2D/3D**
+  - [ ] Setup básico
+  - [ ] Estruturas de dados
+  - [ ] Transformações básicas
+  - [ ] Visualização em tempo real
+  - [ ] Features avançadas
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 💡 Dicas de Estudo
 
-### Linguagens Principais
-- **C/C++**: Para projetos de performance e baixo nível
-- **Python**: Para prototipagem rápida e ML
+### ✅ O que FAZER:
 
-### Bibliotecas Usadas
-- **Álgebra Linear**: Eigen (C++), NumPy (Python)
-- **Gráficos**: SDL2, OpenGL
-- **ML**: TensorFlow/PyTorch (futuramente)
-- **Visualização**: Matplotlib, Manim
+1. **Matemática antes de código**
+   - Resolva exercícios matemáticos puros ANTES de programar
+   - Entenda profundamente o conceito abstrato
 
-### Ferramentas
-- **Build**: Make, CMake
-- **Controle de versão**: Git
-- **Documentação**: Markdown
-- **Visualização**: GeoGebra, Desmos
+2. **Visualize sempre**
+   - Desenhe no papel
+   - Use GeoGebra, Desmos
+   - Crie visualizações simples
 
----
+3. **Implemente do zero primeiro**
+   - Só depois compare com NumPy/Eigen
+   - "Sentir a dor" ajuda a apreciar otimizações
 
-## 🎓 Princípios de Aprendizado
+4. **Não pule exercícios**
+   - Comece do Nível 1 mesmo parecendo fácil
+   - Construa confiança progressivamente
 
-### 1. **Implementar para Entender**
-> "I hear and I forget. I see and I remember. I do and I understand." — Confúcio
+5. **Use analogias**
+   - Conecte com seu contexto (One Piece, jogos, etc.)
+   - Crie suas próprias analogias
 
-Cada conceito matemático é implementado em código. Não basta ler sobre matrizes - você precisa multiplicá-las no seu próprio código.
+6. **Projetos são essenciais**
+   - Não pule o projeto âncora
+   - É onde tudo se integra
 
-### 2. **Visualizar é Compreender**
-Use visualizações sempre que possível. Matemática abstrata fica concreta quando você VÊ o que está acontecendo.
+### ❌ O que EVITAR:
 
-### 3. **Conectar com Aplicações Reais**
-Não estude "no vácuo". Todo tópico está ligado a aplicações práticas em CS:
-- Álgebra Linear → ML, Gráficos 3D
-- Cálculo → Otimização, Física
-- Estatística → Data Science, ML
-- Matemática Discreta → Algoritmos, Criptografia
-
-### 4. **Projetos como Âncoras**
-Cada módulo tem um projeto prático. Projetos forçam você a:
-- Integrar múltiplos conceitos
-- Enfrentar problemas reais
-- Criar algo tangível
-- Debugar e iterar
-
-### 5. **Analogias e Intuição**
-Use analogias do seu contexto (programação, One Piece, etc.) para tornar conceitos abstratos mais concretos.
+1. ~~Pular direto para o código~~
+2. ~~Ignorar exercícios matemáticos puros~~
+3. ~~Tentar aprender muito de uma vez~~
+4. ~~Usar bibliotecas antes de implementar~~
+5. ~~Não revisar periodicamente~~
+6. ~~Pular visualizações~~
 
 ---
 
-## 📊 Progresso
+## 📖 Recursos Gerais para Fundamentos
 
-### Álgebra Linear
-- [x] Contexto e conceitos fundamentais
-- [x] Implementação em C/C++
-- [x] Exercícios estruturados
-- [x] Recursos e conexões
-- [ ] Projeto: Engine de Transformações 2D
-  - [ ] Etapa 0: Setup
-  - [ ] Etapa 1: Estruturas básicas
-  - [ ] Etapa 2: Desenhar formas
-  - [ ] Etapa 3: Transformações básicas
-  - [ ] Etapa 4: Visualização em tempo real
-  - [ ] Etapa 5: Composição
-  - [ ] Etapa 6: Features avançadas
+### 🎥 Vídeos Essenciais
 
----
+1. **3Blue1Brown** - Essence of Linear Algebra, Calculus
+   - As MELHORES visualizações que existem
+   - Assista ANTES de estudar cada tópico
 
-## 🎯 Metas de Longo Prazo
+2. **MIT OpenCourseWare**
+   - 18.06 (Álgebra Linear - Gilbert Strang)
+   - 18.01 (Cálculo)
+   - 6.042 (Matemática Discreta)
 
-**Ao final deste repositório, eu serei capaz de:**
+3. **Khan Academy**
+   - Base sólida para revisar conceitos
+   - Muitos exercícios práticos
 
-### Álgebra Linear
-- [ ] Implementar qualquer transformação linear do zero
-- [ ] Explicar geometricamente o que matrizes fazem
-- [ ] Usar álgebra linear em ML (PCA, SVD, gradientes)
-- [ ] Entender completamente autovalores/autovetores
+### 📚 Livros (Todos Gratuitos!)
 
-### Cálculo
-- [ ] Implementar gradient descent do zero
-- [ ] Otimizar funções multivariáveis
-- [ ] Entender backpropagation profundamente
-- [ ] Aplicar cálculo em física/robótica
+**Álgebra Linear:**
+- *Introduction to Linear Algebra* - Gilbert Strang
+- *Linear Algebra for CS* - Manoj Thulasidas ([PDF](https://la4cs.com/))
+- *Introduction to Applied Linear Algebra* - Boyd & Vandenberghe ([PDF](https://web.stanford.edu/~boyd/vmls/))
 
-### Estatística
-- [ ] Implementar classificadores do zero (Naive Bayes, etc.)
-- [ ] Entender inferência estatística
-- [ ] Fazer análise exploratória de dados
-- [ ] Aplicar estatística em ML
+**Cálculo:**
+- *Calculus* - Gilbert Strang (MIT OCW)
+- *Single Variable Calculus* - MIT OCW
 
-### Matemática Discreta
-- [ ] Implementar algoritmos de grafos eficientemente
-- [ ] Analisar complexidade rigorosamente
-- [ ] Entender combinatória e contagem
-- [ ] Aplicar em criptografia
+**Estatística:**
+- *Introduction to Probability* - Blitzstein & Hwang
+- *Think Stats* - Allen Downey
 
----
+**Matemática Discreta:**
+- *Mathematics for Computer Science* - Lehman, Leighton, Meyer (MIT)
 
-## 🔗 Conexões entre Tópicos
+**Geral:**
+- *Mathematics for Machine Learning* - Deisenroth et al. ([PDF](https://mml-book.github.io/))
 
-Este diagrama mostra como os tópicos se conectam:
+### 🛠️ Ferramentas
 
-```
-    Álgebra Linear ←→ Geometria Analítica
-           ↓                    ↓
-        Cálculo  ←→  Estatística
-           ↓                    ↓
-      Otimização ←→  Machine Learning
-           ↓                    ↓
-    Matemática Discreta  ←→  Algoritmos
-```
-
-**Exemplo de integração:** 
-- PageRank usa **grafos** (discreta) + **autovalores** (álgebra) + **probabilidade** (estatística)
+- **Visualização**: GeoGebra, Desmos, Manim
+- **Computação**: Python, NumPy, Matplotlib
+- **Build**: Make, CMake (para projetos C/C++)
+- **Edição**: VS Code, Jupyter Notebooks
 
 ---
 
-## 📝 Como Contribuir (para mim mesmo no futuro)
+## 🎮 Sistema de Acompanhamento (Opcional)
 
-### Ao adicionar um novo módulo:
-1. Crie a estrutura de pastas
-2. Escreva os 4 arquivos markdown
-3. Implemente o projeto âncora
-4. Faça pelo menos 3 exercícios
-5. Documente lições aprendidas
-6. Atualize este README
-
-### Ao revisar:
-- Adicione analogias melhores
-- Melhore explicações confusas
-- Adicione mais exemplos visuais
-- Corrija erros
-
----
-
-## 🌟 Recursos Favoritos
-
-### Vídeos/Canais
-1. **3Blue1Brown** - Visualizações incríveis de conceitos matemáticos
-2. **MIT OpenCourseWare** - Cursos completos gratuitos
-3. **Khan Academy** - Base sólida com exercícios
-
-### Livros
-1. **"Introduction to Linear Algebra"** - Gilbert Strang
-2. **"Linear Algebra for CS"** - Manoj Thulasidas (GRÁTIS!)
-3. **"Mathematics for Machine Learning"** - Deisenroth et al. (GRÁTIS!)
-
-### Ferramentas
-1. **GeoGebra** - Visualizar transformações
-2. **Desmos** - Calculadora gráfica interativa
-3. **Manim** - Criar animações matemáticas
-
----
-
-## 💡 Lições Aprendidas
-
-### O que funcionou bem:
-- ✅ Implementar conceitos em código solidifica MUITO o entendimento
-- ✅ Visualizações fazem conceitos abstratos ficarem concretos
-- ✅ Projetos práticos motivam e integram conhecimento
-- ✅ Exercícios progressivos (fácil → difícil) constroem confiança
-
-### O que não funcionou:
-- ❌ Tentar aprender muito de uma vez (sobrecarga cognitiva)
-- ❌ Pular direto para exercícios sem entender conceitos
-- ❌ Não revisar periodicamente (esquecimento)
-
-### Ajustes para o futuro:
-- 🔄 Revisar módulos anteriores mensalmente
-- 🔄 Fazer mini-projetos integradores entre módulos
-- 🔄 Criar resumos visuais (mind maps)
-
----
-
-## 🎮 Gamificação (opcional)
-
-Para tornar o estudo mais engajante:
-
-### Sistema de XP:
-- Completar arquivo de contexto: 10 XP
-- Implementar estrutura básica: 20 XP
-- Fazer 1 exercício: 5 XP
-- Completar projeto básico: 50 XP
-- Completar projeto com bônus: 100 XP
+### XP por Atividade:
+- Completar arquivo de teoria: **10 XP**
+- Resolver conjunto de exercícios (todos os níveis): **30 XP**
+- Implementar estrutura de dados/algoritmo: **20 XP**
+- Completar mini-projeto de exercícios: **50 XP**
+- Completar projeto âncora: **100 XP**
 
 ### Achievements:
-- 🏆 **First Blood:** Primeiro conceito implementado
-- 🏆 **Bug Hunter:** Encontrar e corrigir 10 bugs
-- 🏆 **Architect:** Completar um projeto inteiro
-- 🏆 **Speed Demon:** Completar módulo em < 5 semanas
-- 🏆 **Perfectionist:** Fazer todos os exercícios de um módulo
+- 🏆 **First Steps**: Primeiro arquivo de teoria lido
+- 🏆 **Mathematician**: 100 exercícios matemáticos resolvidos
+- 🏆 **Coder**: Primeira implementação do zero
+- 🏆 **Architect**: Projeto âncora completo
+- 🏆 **Master**: Matéria completamente dominada (teoria + exercícios + projeto)
+
+### Meta Total de XP: ~1000 XP (todas as 6 matérias)
 
 ---
 
-## 📅 Timeline
+## 🔗 Conexões e Próximos Passos
 
-- **Início:** [Data]
-- **Meta:** Completar Álgebra Linear até [Data + 8 semanas]
-- **Revisão 1:** [Data + 4 semanas]
-- **Revisão 2:** [Data + 8 semanas]
+### Depois de Completar i1-fundamentos:
 
----
+1. **i2-aplicacoes/** - Aplicar fundamentos em domínios específicos
+   - Algoritmos avançados
+   - ML do zero
+   - Computação gráfica
+   - Criptografia
 
-## 🤝 Agradecimentos
-
-### Inspirações:
-- **3Blue1Brown** - Por tornar matemática linda
-- **Gilbert Strang** - Por décadas de ensino excelente
-- **Comunidade de CS/Math** - Por compartilhar conhecimento livremente
-
-### Fontes:
-- MIT OpenCourseWare
-- Stanford CS231n
-- Deep Learning Book (Goodfellow et al.)
-- E todos os recursos listados em cada módulo
-
-#### 📚 Recursos Gratuitos que você DEVE usar
-
-Estes são totalmente gratuitos e de altíssima qualidade:
-
- - **3Blue1Brown** - Essence of Linear Algebra 
-    - [YouTube](https://www.3blue1brown.com/topics/linear-algebra): As melhores visualizações que existem
- - **Linear Algebra for CS (LA4CS)**
-    - [PDF](https://la4cs.com/): Livro completo grátis!
- - **MIT 18.06 - Curso completo do Gilbert Strang** 
-    - [Link](https://ocw.mit.edu/): Vídeos + notas + exercícios
- - **Introduction to Applied Linear Algebra** - Boyd & Vandenberghe 
-    - [PDF](https://web.stanford.edu/~boyd/vmls/): livro disponível
+2. **i3-projetos/** - Projetos integradores complexos
+   - Mini ML Framework
+   - Ray Tracer
+   - Sistema de navegação marítima
+   - E mais...
 
 ---
 
-## 📬 Contato
+## 📅 Timeline Sugerida
 
-Se você encontrou este repositório e quer conversar sobre matemática para CS:
-- Abra uma issue para discussões
-- Compartilhe seus próprios projetos
-- Sugira melhorias
+**Ordem Recomendada:**
+
+1. **Álgebra Linear** (6-8 semanas)
+   - Começa aqui - base para quase tudo
+
+2. **Geometria Analítica** (3-4 semanas)
+   - Complementa álgebra linear
+
+3. **Cálculo** (6-8 semanas)
+   - Usa conceitos de álgebra
+
+4. **Estatística** (4-6 semanas)
+   - Usa cálculo e álgebra
+
+5. **Matemática Discreta** (5-7 semanas)
+   - Pode ser feita em paralelo com outras
+
+6. **Física** (3-5 semanas)
+   - Integra cálculo e álgebra
+
+**Total estimado: 30-40 semanas (~8-10 meses com 2-3h/semana)**
 
 ---
 
-## 📜 Licença
+**Última atualização:** 27 de dezembro de 2025  
+**Status:** 🟡 Estruturando Álgebra Linear  
+**Próximo marco:** Completar primeiro arquivo de teoria
 
-Este repositório é para fins educacionais. Todo o código é de domínio público (Unlicense). Use, modifique e aprenda livremente!
-
----
-
-**Última atualização:** [Data]  
-**Status atual:** 🟢 Estudando Álgebra Linear  
-**Próximo marco:** Completar projeto de Transformações 2D
-
----
-
-> **Lembre-se:** O objetivo não é apenas "passar pela matéria", mas **dominar os conceitos** a ponto de poder aplicá-los confortavelmente em projetos reais. Qualidade > Quantidade. 🚀
+> **Lembre-se:** Consistência > Intensidade. Melhor estudar 2h/semana todo semana do que 10h em um fim de semana e depois parar. 🚀

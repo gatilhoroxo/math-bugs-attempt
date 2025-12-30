@@ -1,161 +1,187 @@
 # math-bugs-attempt
-Learning about math in cs. 
 
-## Mapa de estudos
+> Matemática para Ciência da Computação - Da teoria aos projetos práticos
 
- - **Álgebra Linear** → é a base para Machine Learning, Computação Gráfica, Robótica (transformações, sistemas de coordenadas)
- - **Geometria Analítica** → 
- - **Cálculo** → conecta com ML (otimização, gradientes), Robótica (cinemática, controle), Gráficos (curvas, superfícies)
- - **Estatística & Probabilidade** → essencial para ML, Análise de Algoritmos (complexidade esperada), Criptografia
- - **Matemática Discreta & Lógica** → Algoritmos, Estruturas de Dados, Criptografia, Análise de Complexidade
+## 📌 Navegação Rápida
 
-Estrutura do repositório
+- **[i1-fundamentos/](i1-fundamentos/)** - Álgebra, Geometria, Cálculo, Estatística, Discreta, Física
+- **[i2-aplicacoes/](i2-aplicacoes/)** - Algoritmos, ML, Gráficos, Criptografia
+- **[i3-projetos/](i3-projetos/)** - Projetos integradores avançados
+- **[objetivos.md](objetivos.md)** - Motivação e objetivos pessoais
 
-``` 
-math-for-cs/
-├── i1-fundamentos/
+---
+
+## 🎯 Sobre Este Repositório
+
+Este é um repositório de estudos pessoal focado em **aprender matemática através da prática**. Não é apenas teoria - cada conceito matemático é aplicado em projetos reais de computação.
+
+### Áreas de Interesse:
+🤖 Machine Learning | 🎮 Computação Gráfica | 🔐 Criptografia  
+🤖 Robótica | 📊 Análise de Algoritmos | 🚢 Navegação
+
+### Filosofia:
+1. **Matemática pura primeiro** - Dominar exercícios matemáticos antes de programar
+2. **Implementar do zero** - Entender profundamente antes de usar bibliotecas
+3. **Projetos âncora** - Cada tópico tem um projeto prático integrador
+4. **Visualização** - Ver geometricamente o que está acontecendo
+
+---
+
+## 🗺️ Estrutura do Repositório
+
+```
+math-bugs-attempt/
+│
+├── i1-fundamentos/              ← Matemática fundamental
 │   ├── j1-algebra-linear/
-│   │   ├── 01-contexto-conceitos.md
-│   │   ├── 02-implementacao.md
-│   │   ├── 03-exercicios.md
-│   │   ├── 04-recursos-conexoes.md
-│   │   └── projeto-transformacoes-2d/
 │   ├── j2-geometria-analitica/
-│   │   └──
 │   ├── j3-calculo/
-│   │   └──
 │   ├── j4-estatistica/
-│   │   └──
-│   └── j5-matematica-discreta/
-│       └──
-├── i2-aplicacoes/
+│   ├── j5-matematica-discreta/
+│   └── j6-fisica/
+│
+├── i2-aplicacoes/               ← Aplicações em CS
 │   ├── j1-algoritmos/
-│   │   └──
 │   ├── j2-ml-basics/
-│   │   └──
 │   ├── j3-computacao-grafica/
-│   │   └──
 │   └── j4-criptografia/
-│       └──
-├── i3-projetos/
-│   └── j1-stuff/
-└── recursos.md
+│
+├── i3-projetos/                 ← Projetos integradores
+│   ├── j1-ml-framework/
+│   ├── j2-ray-tracer/
+│   ├── j3-rsa-crypto/
+│   ├── j4-simulador-robo/
+│   ├── j5-navegacao-maritima/
+│   └── j6-competitive-programming/
+│
+├── objetivos.md                 ← Por que este repositório existe
+└── README.md                    ← Você está aqui
 ```
 
-## 💡 Dicas Importantes
+---
 
- 1. **Não pule o 3Blue1Brown**: Esses vídeos vão transformar sua compreensão visual. Assista ANTES de mergulhar fundo nos exercícios.
- 2. **Implemente tudo do zero primeiro**: Só depois compare com bibliotecas como Eigen. Você precisa "sentir a dor" para apreciar as otimizações.
- 3. **Use analogias**: Quando algo não fizer sentido, tente criar sua própria analogia (One Piece, jogos, navegação, etc.).
- 4. **Visualize sempre**: Desenhe no papel, use GeoGebra, veja geometricamente o que está acontecendo.
- 5. **Não se preocupe em fazer TUDO**: Se um exercício não te interessa, pule. O importante é entender os conceitos fundamentais.
+## 📚 Mapa de Estudos
 
-## Plano de Estudos
+### i1-fundamentos - Bases Matemáticas
 
-### Fase 1: Algebra Linear
+| Matéria | Conexão com CS | Projeto Âncora |
+|---------|----------------|----------------|
+| **Álgebra Linear** | ML, Computação Gráfica, Robótica | Engine de Transformações 2D/3D |
+| **Geometria Analítica** | Navegação, Colisões, Gráficos | Sistema de Navegação + GPS |
+| **Cálculo** | Otimização (ML), Física, Robótica | Gradient Descent Visualizado |
+| **Estatística** | ML, Análise de Dados, Criptografia | Classificador Naive Bayes |
+| **Matemática Discreta** | Algoritmos, Grafos, Criptografia | Algoritmos de Grafo + SAT Solver |
+| **Física** | Simulações, Jogos, Robótica | Motor de Física 2D |
 
-É a base mais nebulosa e aparece em quase tudo que vai ser feito aqui. 
+### i2-aplicacoes - Domínios de Aplicação
 
-**Conceitos-chave para dominar:**
- - Vetores e espaços vetorias
- - Matrizes como transformações lineares
- - Autovalores e autovetores
- - Decomposições
+Aplicações práticas que integram múltiplos fundamentos matemáticos em áreas específicas da computação.
 
-#### Projeto âncora: Implementar um mini-engine de transformações 2D/3D
- - Rotações, translações, escala
- - Projeções (ortográfica e perspectiva)
- - Visualizar como matrizes transformam objetos
- - Analogia One Piece: Imagina implementar as transformações do Gear 4 do Luffy - cada matriz é um tipo de transformação que muda a "forma" dos vetores!
+### i3-projetos - Integradores Avançados
 
+Projetos complexos que combinam várias áreas da matemática em sistemas completos.
 
-### Fase 2: Geometria Analítica
+---
 
-### Fase 3: Cálculo Aplicado
+## 🚀 Como Usar
 
-Entender derivadas e integrais como ferramentas, não só a mecânica de resolver. 
+### Começando
 
-**Conceitos-chave:**
- - Derivadas como taxas de variação e aproximações locais
- - Gradiente e direção de máxima variação
- - Integrais como acumulação
- - Otimização (gradiente descendente)
+1. **Leia [objetivos.md](objetivos.md)** para entender a motivação
+2. **Entre em [i1-fundamentos/](i1-fundamentos/)** e leia o README de lá
+3. **Escolha uma matéria** (recomendado: começar por Álgebra Linear)
+4. **Siga o fluxo de estudo** detalhado no README de cada matéria
 
-#### Projeto âncora: Implementar Gradient Descent do zero
- - Visualizar como a derivada "aponta" a direção
- - Aplicar em problemas simples
- - Ver como o learning rate afeta a convergência
+### Estrutura de Cada Matéria
 
-
-### Fase 4: Estatística & Probabilidade 
-
-Com álgebra linear e cálculo, é possível entender ML de verdade. 
-
-**Conceitos-chave:**
- - Probabilidade básica e distribuições
- - Estatística descritiva (média, variância, covariância)
- - Inferência e testes de hipótese
- - Teorema de Bayes
-
-#### Projeto âncora: Sistema de recomendação simples ou classificador bayesiano
- - Implementar Naive Bayes do zero
- - Aplicar em dados reais (ex: classificar texto, spam detection)
-
-### Fase 5: Matemática Discreta Avançada 
-
-**Conceitos-chave:**
- - Teoria dos grafos (BFS, DFS, caminhos mínimos)
- - Combinatória e contagem
- - Relações de recorrência
- - Teoria dos números básica (para criptografia)
-
-#### Projeto âncora: Implementar algoritmos de grafo + análise de Complexidade
- - Visualizar grafos
- - Implementar Dijstra, A*
- - Análise rigorosa de complexidade
-
-### Fase 6: Projetos Integradores
-Junta:
-1. **Mini ML Framework**: Implementar rede neural do zero (álgebra + cálculo + estatística)
-2. **Render 2D básico**: Ray tracing simples (álgebra = geometria)
-3. **Implementação de RSA**: Criptografia de chave pública (teoria dos números + discreta)
-4. **Simulador de robô**: Cinemática e controle (álgebra + cálculo)
-
-## Estrutura de cada .md de estudo
-
-Para cada tópico:
-
-``` md
-# [Tópico]
-
-## Contexto e Motivação
-- Por que isso importa?
-- Onde é usado em CS?
-
-## Conceitos Fundamentais
-- Teoria mínima necessária
-- Analogias e intuição
-```
-
-``` md
-## Implementação
-- Como codificar isso?
-- Exemplos práticos
-```
-
-``` md
-## Exercícios
-- Problemas progressivos
-- Links para prática
-```
-
-``` md
-## Recursos
-- Referências (livros, vídeos, papers)
-- Links úteis
-
-## Conexões
-- Como se conecta com outros tópicos?
+Todas as matérias em `i1-fundamentos/jX-nome/` seguem esta estrutura:
 
 ```
+jX-materia/
+├── readme.md                    # Visão geral e índice
+├── teoria/                      # Conteúdo teórico
+│   ├── 01-topico.md
+│   └── ...
+├── exercicios-matematica/       # Exercícios puros + soluções
+├── implementacao/               # Como implementar em código
+├── exercicios-codigo/           # Problemas de programação
+├── projeto-ancora/              # Projeto integrador
+└── recursos.md                  # Links, vídeos, livros
+```
 
+Veja o README de `i1-fundamentos/` para detalhes completos da metodologia.
+
+---
+
+## 💡 Princípios de Aprendizado
+
+### 1. Teoria → Prática → Projeto
+Entender o conceito → Resolver exercícios → Implementar → Aplicar em projeto
+
+### 2. Não Pular Etapas
+- ❌ ~~Ir direto para o código~~
+- ✅ Matemática pura primeiro, depois código
+
+### 3. Visualizar Sempre
+Use GeoGebra, Desmos, desenhe no papel. Matemática abstrata fica concreta visualmente.
+
+### 4. Implementar do Zero Antes de Usar Bibliotecas
+Só depois de implementar manualmente, compare com NumPy/Eigen/etc.
+
+### 5. Projetos como Âncoras
+Cada conceito é aplicado em um projeto real que você pode ver funcionando.
+
+---
+
+## 📊 Progresso Atual
+
+**Status:** 🟢 Iniciando - Fase de planejamento concluída
+
+| Seção | Progresso | Próximo Marco |
+|-------|-----------|---------------|
+| **i1-fundamentos** | 📝 Estruturando | Começar Álgebra Linear |
+| **i2-aplicacoes** | ⚪ Planejado | - |
+| **i3-projetos** | ⚪ Planejado | - |
+
+Acompanhe o progresso detalhado no README de cada seção.
+
+---
+
+## 🛠️ Stack Tecnológica
+
+**Linguagens:** C/C++, Python  
+**Build:** Make, CMake  
+**Visualização:** GeoGebra, Matplotlib, Manim  
+**Bibliotecas (para comparação):** Eigen, NumPy, TensorFlow
+
+---
+
+## 📖 Recursos Gerais Recomendados
+
+### Canais/Vídeos
+- **3Blue1Brown** - Melhores visualizações de matemática
+- **MIT OpenCourseWare** - Cursos completos gratuitos
+- **Khan Academy** - Base sólida
+
+### Livros (Gratuitos)
+- **Mathematics for Machine Learning** - Deisenroth et al.
+- **Linear Algebra for CS** - Manoj Thulasidas
+- **Introduction to Applied Linear Algebra** - Boyd & Vandenberghe
+
+Recursos específicos estão nos READMEs de cada matéria.
+
+---
+
+## 🤝 Sobre
+
+Este é um repositório pessoal de estudos. Sinta-se livre para explorar, aprender junto, ou dar sugestões através de issues.
+
+**Áreas de interesse:** Algoritmos, ML, Computação Gráfica, Robótica, Navegação Marítima, Programação Competitiva
+
+---
+
+**Última atualização:** 27 de dezembro de 2025  
+**Tempo estimado total:** ~40-50 semanas (estudando 2-3h/semana)  
+**Status atual:** 📝 Planejamento e estruturação concluídos
+
+> "A matemática é a música da razão." — James Joseph Sylvester

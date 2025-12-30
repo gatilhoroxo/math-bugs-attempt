@@ -11,7 +11,92 @@ Criar um programa interativo que visualiza transformações lineares 2D, permiti
 - Implementação eficiente de operações matriciais
 - Visualização e debugging de conceitos abstratos
 
-**Tempo estimado:** 8-12 horas (distribuídas ao longo de 2-3 semanas)
+---
+
+## ⏱️ Tempo Estimado
+
+- **Total:** 8-12 horas (distribuídas ao longo de 2-3 semanas)
+- **Etapa 0:** 30 min (setup)
+- **Etapas 1-2:** 2-4h (estruturas básicas)
+- **Etapas 3-4:** 4-6h (transformações e visualização)
+- **Etapa 5:** 2h (composição)
+- **Etapa 6:** 3-5h (opcional, features avançadas)
+
+---
+
+## 🎚️ Dificuldade
+
+⭐⭐⭐⭐ Avançado
+
+**Nível de complexidade:**
+- Programação: Intermediário-Avançado
+- Matemática: Intermediário
+- Gráficos: Iniciante
+
+---
+
+## 💪 Sistema de XP
+
+| Etapa | Descrição | XP | Status |
+|-------|-----------|-----|--------|
+| **0** | Setup do ambiente | 20 XP | ⬜ |
+| **1** | Estruturas básicas (Vec2, Mat3) | 50 XP | ⬜ |
+| **2** | Desenhar formas simples | 40 XP | ⬜ |
+| **3** | Aplicar transformações básicas | 60 XP | ⬜ |
+| **4** | Visualização tempo real | 70 XP | ⬜ |
+| **5** | Composição de transformações | 60 XP | ⬜ |
+| **6.1** | Múltiplas formas | +40 XP | ⬜ |
+| **6.2** | Animação (lerp) | +50 XP | ⬜ |
+| **6.3** | Transformações customizadas | +30 XP | ⬜ |
+| **6.4** | Grid de transformação | +40 XP | ⬜ |
+| **6.5** | Visualizar autovalores | +60 XP | ⬜ |
+
+**XP Total Base:** 300 XP  
+**XP Total com Bônus:** 520 XP
+
+---
+
+## 📊 Rastreamento de Progresso
+
+- [ ] Etapa 0 completa (Setup) - 20 XP
+- [ ] Etapa 1 completa (Estruturas) - 50 XP
+- [ ] Etapa 2 completa (Desenho) - 40 XP
+- [ ] Etapa 3 completa (Transformações) - 60 XP
+- [ ] Etapa 4 completa (Visualização) - 70 XP
+- [ ] Etapa 5 completa (Composição) - 60 XP
+- [ ] Projeto Base Completo (0-5) - 300 XP
+- [ ] Features Avançadas (6.1-6.5) - até +220 XP
+
+**XP Conquistado:** ___ / 300 XP (base) ou ___ / 520 XP (completo)
+
+---
+
+## ⌨️ Guia Rápido de Controles
+
+### Transformações Básicas
+- **R** - Rotacionar +10° (sentido anti-horário)
+- **E** - Rotacionar -10° (sentido horário)
+- **↑ ↓ ← →** - Transladar nas 4 direções (10 pixels)
+- **+** ou **=** - Aumentar escala (110%)
+- **-** - Diminuir escala (90%)
+
+### Controles de Sistema
+- **Espaço** - Reset (voltar ao estado inicial)
+- **Ctrl+Z** - Desfazer última transformação (Etapa 5+)
+- **M** - Alternar modo Imediato/Composição (Etapa 5+)
+- **P** - Imprimir matriz atual no terminal
+- **ESC** ou **X** - Sair
+
+### Controles Avançados (Etapa 6)
+- **1-9** - Selecionar forma (se múltiplas formas)
+- **H** - Cisalhamento horizontal
+- **V** - Cisalhamento vertical
+- **F** - Reflexão sobre eixo X
+- **G** - Reflexão sobre eixo Y
+- **A** - Ativar/desativar animação
+- **D** - Mostrar/esconder grid de transformação
+
+**Dica:** Pressione **H** ou **?** no programa para mostrar esta ajuda.
 
 ---
 

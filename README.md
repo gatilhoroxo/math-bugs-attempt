@@ -33,8 +33,8 @@ Este é um repositório de estudos pessoal focado em **aprender matemática atra
 math-bugs-attempt/
 │
 ├── i1-fundamentos/              ← Matemática fundamental
-│   ├── j1-algebra-linear/
-│   ├── j2-geometria-analitica/
+│   ├── j1-geometria-analitica/
+│   ├── j2-algebra-linear/
 │   ├── j3-calculo/
 │   ├── j4-estatistica/
 │   ├── j5-matematica-discreta/
@@ -66,8 +66,8 @@ math-bugs-attempt/
 
 | Matéria | Conexão com CS | Projeto Âncora |
 |---------|----------------|----------------|
-| **Álgebra Linear** | ML, Computação Gráfica, Robótica | Engine de Transformações 2D/3D |
 | **Geometria Analítica** | Navegação, Colisões, Gráficos | Sistema de Navegação + GPS |
+| **Álgebra Linear** | ML, Computação Gráfica, Robótica | Engine de Transformações 2D/3D |
 | **Cálculo** | Otimização (ML), Física, Robótica | Gradient Descent Visualizado |
 | **Estatística** | ML, Análise de Dados, Criptografia | Classificador Naive Bayes |
 | **Matemática Discreta** | Algoritmos, Grafos, Criptografia | Algoritmos de Grafo + SAT Solver |

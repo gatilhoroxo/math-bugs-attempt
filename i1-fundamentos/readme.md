@@ -23,8 +23,8 @@ Este módulo contém os **6 pilares matemáticos** essenciais para ciência da c
 
 | # | Matéria | Por que estudar? | Aplicações em CS |
 |---|---------|------------------|------------------|
-| **j1** | [Álgebra Linear](j1-algebra-linear/) | Base nebulosa que aparece em quase tudo | ML, Gráficos 3D, Robótica, Compressão |
-| **j2** | [Geometria Analítica](j2-geometria-analitica/) | Representações geométricas e espaciais | Navegação, Colisões, Renderização |
+| **j1** | [Geometria Analítica](j1-geometria-analitica/) | Representações geométricas e espaciais | Navegação, Colisões, Renderização |
+| **j2** | [Álgebra Linear](j2-algebra-linear/) | Base nebulosa que aparece em quase tudo | ML, Gráficos 3D, Robótica, Compressão |
 | **j3** | [Cálculo](j3-calculo/) | Ferramentas de otimização e mudança | ML (gradientes), Física, Controle |
 | **j4** | [Estatística](j4-estatistica/) | Análise de dados e incerteza | ML, Data Science, Testes A/B |
 | **j5** | [Matemática Discreta](j5-matematica-discreta/) | Estruturas discretas e lógica | Algoritmos, Grafos, Criptografia |
@@ -227,8 +227,8 @@ Com dedicação de **2-3 horas por semana**:
 
 | Matéria | Duração | Total de Horas |
 |---------|---------|----------------|
-| Álgebra Linear | 6-8 semanas | 12-24h |
 | Geometria Analítica | 3-4 semanas | 6-12h |
+| Álgebra Linear | 6-8 semanas | 12-24h |
 | Cálculo | 6-8 semanas | 12-24h |
 | Estatística | 4-6 semanas | 8-18h |
 | Matemática Discreta | 5-7 semanas | 10-21h |
@@ -243,8 +243,8 @@ Com dedicação de **2-3 horas por semana**:
 
 | Matéria | Status | Próximo Marco | Projeto |
 |---------|--------|---------------|---------|
-| **j1-algebra-linear** | 🟡 Estruturando | Completar teoria de vetores | Engine 2D/3D |
-| **j2-geometria-analitica** | ⚪ Planejado | - | Sistema Navegação |
+| **j1-geometria-analitica** | 🟡 Estruturando | - | Sistema Navegação |
+| **j2-algebra-linear** | 🟡 Estruturando | Completar teoria de vetores | Engine 2D/3D |
 | **j3-calculo** | ⚪ Planejado | - | Gradient Descent |
 | **j4-estatistica** | ⚪ Planejado | - | Naive Bayes |
 | **j5-matematica-discreta** | ⚪ Planejado | - | Grafos + SAT |
@@ -414,11 +414,11 @@ Com dedicação de **2-3 horas por semana**:
 
 **Ordem Recomendada:**
 
-1. **Álgebra Linear** (6-8 semanas)
+1. **Geometria Analítica** (3-4 semanas)
    - Começa aqui - base para quase tudo
 
-2. **Geometria Analítica** (3-4 semanas)
-   - Complementa álgebra linear
+2. **Álgebra Linear** (6-8 semanas)
+   - Complementa geometria analítica
 
 3. **Cálculo** (6-8 semanas)
    - Usa conceitos de álgebra

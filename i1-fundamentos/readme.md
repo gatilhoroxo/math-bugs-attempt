@@ -52,39 +52,38 @@ Todas as matérias seguem a **mesma estrutura padronizada**:
 jX-nome-da-materia/
 │
 ├── readme.md                        # Índice e visão geral da matéria
+├── recursos.md                      # Links, vídeos, livros específicos
 │
-├── teoria/                          # Conteúdo teórico
-│   ├── 01-topico-1.md               # Contexto, intuição, definições
-│   ├── 02-topico-2.md
+├── k1-teoria/                          # Conteúdo teórico
+│   ├── t1-topico-1.md               # Contexto, intuição, definições
+│   ├── t2-topico-2.md
 │   └── ...
 │
-├── exercicios-matematica/           # Matemática pura
-│   ├── 01-topico-exercicios.md      # 4 níveis de dificuldade
-│   ├── 01-topico-solucoes.md        # Soluções passo a passo
-│   ├── 02-topico-exercicios.md
+├── k2-exercicios/           # Matemática pura
+│   ├── e1-topico-exercicios.md      # 4 níveis de dificuldade
+│   ├── e1-topico-solucoes.md        # Soluções passo a passo
+│   ├── e2-topico-exercicios.md
 │   └── ...
 │
-├── implementacao/                   # Código e implementações
-│   ├── 01-topico.md                 # Como implementar
-│   ├── 02-topico.md
-│   └── codigo/                      # Código-fonte
-│       ├── src/
-│       └── tests/
+├── k3-implementacao/                   # Código e implementações
+│   ├── i1-topico.md                 # Como implementar
+│   ├── i2-topico.md
+│   ├── src/
+│   └── tests/
 │
-├── exercicios-codigo/               # Problemas de programação
-│   ├── 01-problemas-basicos.md
-│   ├── 02-problemas-intermediarios.md
-│   ├── 03-desafios.md
+├── k4-pratica/               # Problemas de programação
+│   ├── p1-basicos.md
+│   ├── p2-intermediarios.md
+│   ├── p3-avancados.md
 │   └── solucoes/
 │
-├── projeto-ancora/                  # Projeto integrador
-│   ├── README.md
-│   ├── especificacao.md
-│   ├── src/
-│   ├── tests/
-│   └── exemplos/
-│
-└── recursos.md                      # Links, vídeos, livros específicos
+└── k5-projeto/                  # Projeto integrador
+    ├── readme.md
+    ├── especificacao.md
+    ├── src/
+    ├── tests/
+    └── exemplos/
+ 
 ```
 
 ---
@@ -93,7 +92,7 @@ jX-nome-da-materia/
 
 ### Estrutura Detalhada de Cada Tipo de Arquivo
 
-#### 📖 teoria/XX-topico.md
+#### 📖 k1-teoria/tX-topico.md
 Cada arquivo de teoria contém:
 
 1. **Contexto e Motivação**
@@ -118,22 +117,22 @@ Cada arquivo de teoria contém:
    - Como se relaciona com outros tópicos
    - Aplicações práticas em CS
 
-#### ✏️ exercicios-matematica/
+#### ✏️ k2-exercicios/
 
-**Arquivos de exercícios** (XX-topico-exercicios.md):
+**Arquivos de exercícios** (eX-topico-exercicios.md):
 - **Nível 1 - Básico**: Aplicação direta de definições (10-15 exercícios)
 - **Nível 2 - Intermediário**: Combinação de conceitos (8-10 exercícios)
 - **Nível 3 - Avançado**: Problemas desafiadores, provas (5-7 exercícios)
 - **Nível 4 - Olimpíada/Competição**: Problemas muito difíceis (3-5 exercícios)
 
-**Arquivos de soluções** (XX-topico-solucoes.md):
+**Arquivos de soluções** (eX-topico-solucoes.md):
 - Resposta completa passo a passo
 - Explicação do raciocínio
 - Métodos alternativos quando aplicável
 - Dicas sobre erros comuns
 - Insights e padrões importantes
 
-#### 💻 implementacao/XX-topico.md
+#### 💻 k3-implementacao/iX-topico.md
 
 Cada arquivo de implementação contém:
 
@@ -163,29 +162,29 @@ Cada arquivo de implementação contém:
    - Erros de precisão numérica
    - Como evitá-los
 
-#### 🎯 exercicios-codigo/
+#### 🎯 k4-pratica/
 
 **Problemas progressivos de programação:**
 
-- **01-problemas-basicos.md**: 5-10 problemas
+- **p1-basicos.md**: 5-10 problemas
   - Implementar operações simples
   - Testar compreensão básica
   
-- **02-problemas-intermediarios.md**: 5-8 problemas
+- **p2-intermediarios.md**: 5-8 problemas
   - Algoritmos que usam os conceitos
   - Combinação de múltiplas operações
   
-- **03-desafios.md**: 3-5 problemas
+- **p3-avancados.md**: 3-5 problemas
   - Otimizações avançadas
   - Casos complexos do mundo real
   
 - **Links Externos**: LeetCode, Codeforces, Project Euler relacionados
 
-#### 🚀 projeto-ancora/
+#### 🚀 k5-projeto/
 
 O projeto âncora integra TODOS os conceitos da matéria:
 
-- **README.md**: Visão geral, objetivos de aprendizado
+- **readme.md**: Visão geral, objetivos de aprendizado
 - **especificacao.md**: 
   - O que implementar (requisitos funcionais)
   - Etapas do projeto (do básico ao avançado)
@@ -202,22 +201,22 @@ Para cada tópico dentro de uma matéria:
 
 ```
 ┌─────────────────────────────────────────┐
-│ 1. Ler teoria/XX-topico.md              │
-│    ↓                                     │
+│ 1. Ler k1-teoria/tX-topico.md           │
+│    ↓                                    │
 │ 2. Assistir vídeos em recursos.md       │
-│    ↓                                     │
-│ 3. Resolver exercicios-matematica/      │ ← MATEMÁTICA PURA
-│    (começar do Nível 1)                  │
-│    ↓                                     │
-│ 4. Comparar com soluções                 │
-│    ↓                                     │
-│ 5. Ler implementacao/XX-topico.md       │
-│    ↓                                     │
-│ 6. Implementar você mesmo                │ ← CÓDIGO
-│    ↓                                     │
-│ 7. Resolver exercicios-codigo/          │
-│    ↓                                     │
-│ 8. Trabalhar no projeto-ancora/         │ ← INTEGRAÇÃO
+│    ↓                                    │
+│ 3. Resolver k2-exercicios/              │ ← MATEMÁTICA PURA
+│    (começar do Nível 1)                 │
+│    ↓                                    │
+│ 4. Comparar com soluções                │
+│    ↓                                    │
+│ 5. Ler k2-implementacao/iX-topico.md    │
+│    ↓                                    │
+│ 6. Implementar você mesmo               │ ← CÓDIGO
+│    ↓                                    │
+│ 7. Resolver k4-pratica/                 │
+│    ↓                                    │
+│ 8. Trabalhar no k5-projeto/             │ ← INTEGRAÇÃO
 └─────────────────────────────────────────┘
 ```
 
@@ -436,7 +435,7 @@ Com dedicação de **2-3 horas por semana**:
 
 ---
 
-**Última atualização:** 27 de dezembro de 2025  
+**Última atualização:** 31 de dezembro de 2025  
 **Status:** 🟡 Estruturando Álgebra Linear  
 **Próximo marco:** Completar primeiro arquivo de teoria
 

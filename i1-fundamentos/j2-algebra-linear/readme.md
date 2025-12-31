@@ -1,4 +1,4 @@
-# j1-algebra-linear - Álgebra Linear
+# j2-algebra-linear - Álgebra Linear
 
 > **"Álgebra Linear é a matemática dos dados."** — Gilbert Strang
 

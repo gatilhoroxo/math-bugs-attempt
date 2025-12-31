@@ -1,4 +1,4 @@
-# j2-geometria-analitica - Geometria Analítica
+# j1-geometria-analitica - Geometria Analítica
 
 > **"A geometria é a arte de pensar bem e desenhar mal."** — Henri Poincaré
 
